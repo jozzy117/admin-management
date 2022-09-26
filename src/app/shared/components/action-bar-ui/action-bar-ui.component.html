@@ -1,0 +1,9 @@
+<div class="d-flex flex-wrap align-items-center mb-3">
+    <div *ngIf="showActionButtons && actionButtons.length">
+        <ng-container *ngFor="let button of actionButtons">
+            <button [ngClass]="evalClass(button.value)" class="actionBtn mx-1" (click)="actionToggled(button.value)">
+        {{ button.name }}
+      </button>
+        </ng-container>
+    </div>
+</div>

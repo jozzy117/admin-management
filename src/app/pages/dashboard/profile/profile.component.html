@@ -1,0 +1,8 @@
+<app-user-info [disableForm]="disableForm" [formValues]="formValues" (nextEmit)="submit($event)"></app-user-info>
+<div class="d-flex" style="margin-left: 30px;">
+    <app-button-icon-ui *ngIf="disableForm" icon="" classNames="btn" name="Edit Details" value="edit" tooltip="Start Editing" (click)="edit()"></app-button-icon-ui>
+    <div *ngIf="!disableForm" class="d-flex align-item-center" style="gap: 30px;">
+        <app-button-icon-ui icon="" iconClass="light_color" classNames="btn mr-3" name="Cancel" value="cancel" tooltip="Cancel Editing" (click)="cancel()"></app-button-icon-ui>
+        <app-button-icon-ui icon="" iconClass="light_color" classNames="btn primary_background" name="Save Details" value="save" tooltip="Save Updated details" (click)="update()"></app-button-icon-ui>
+    </div>
+</div>

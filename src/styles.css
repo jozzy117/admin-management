@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr';
+
+:root {
+    --primary-linear: linear-gradient(90deg,#e3000f,#7f070f);
+    --white: #ffffff;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+p { margin-bottom: 0px;}
+
+.primary_background {
+    background: var(--primary-linear);
+    color: var(--white);
+}
+
+.light_color {
+    color: var(--white);
+}

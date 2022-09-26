@@ -1,0 +1,9 @@
+<header class="px-3 pt-5">
+    <app-title-bar-ui [title]="title" [titleActionButtons]="titleActionButtons" (triggerTitleActionBtn)="triggerTitleActionBtn($event)"></app-title-bar-ui>
+</header>
+<div class="">
+    <div class="py-0 px-3 pt-3">
+        <app-action-bar-ui [showActionButtons]="showActionButtons" [actionButtons]="actionButtons" (actionEmit)="onActionTrigger($event)"></app-action-bar-ui>
+        <app-table-ui [dataSource]="users" (checkboxCheckEmit)="onCheck($event)" (rowClick)="onRowClicked($event)"></app-table-ui>
+    </div>
+</div>

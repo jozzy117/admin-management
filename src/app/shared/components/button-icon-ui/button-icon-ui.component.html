@@ -1,0 +1,5 @@
+<button [disabled]="isDisabled" [type]="buttonType" (click)="trigger(value)" [class]="classNames + ' customBtn'" mat-raised-button [matTooltip]="tooltip || '' " data-toggle="tooltip" data-placement="left">
+    <mat-icon style="width: 20px; height:20px;" [class]="iconClass" *ngIf="icon && iconPosition === 'left' ">{{icon}}</mat-icon>
+    <span *ngIf="name">{{ name }}</span>
+    <mat-icon style="width: 20px; height:20px;" [class]="iconClass" *ngIf="icon && iconPosition === 'right' ">{{icon}}</mat-icon>
+</button>

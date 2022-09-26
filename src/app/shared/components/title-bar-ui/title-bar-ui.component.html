@@ -1,0 +1,13 @@
+<div class="d-flex align-items-center justify-content-between">
+
+    <h5 class="">{{title}}</h5>
+    <div class="">
+        <div style="gap: 0 10px; height: 30px;" class=" d-flex align-items-center" role="group" aria-label="...">
+            <ng-container *ngFor="let btn of titleActionButtons">
+                <ng-container *ngIf="btn.type === 'btn'"> 
+                    <app-button-icon-ui [name]="btn.name" [value]="btn.value" [icon]="btn.icon" [iconClass]="btn.iconClass" (clickEmit)="trigger($event)" [classNames]="btn.classNames" [tooltip]="btn.tooltip"></app-button-icon-ui>
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+</div>
